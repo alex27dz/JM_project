@@ -1,0 +1,26 @@
+python pipeline automation description
+
+Pipelines:
+python pipeline automation description
+
+Main YML - main pipeline configuration
+
+trigger: - source code branch name
+stages: - set of tasks to execute the jobs
+  stage: - first stage to run
+  jobs: - using YML template and parameters
+    -template - template.YML
+     parameters: - passing parameters into template.YML
+      test files: - name of the tests.py
+      testsStack: - General tests group name
+      browser: - chrome
+
+Template YML -
+
+Example YML - not using template
+
+runner.py - the Template YML calls the runner file and passing the necessary params
+
+
+
+requirments - what packeges to install via pip for our automation run
